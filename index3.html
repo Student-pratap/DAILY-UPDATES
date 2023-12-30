@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+</head>
+<body>
+    <script>
+        // Declaring a Class
+class Product {
+    constructor(itemName,price,discount,productCode){
+        this.itemName = itemName;
+        this.price = price;
+        this.discount = discount;
+        this.productCode = productCode;
+    }
+}
+
+let pencil = new Product('Pencil', 20, 2, 'P10');
+
+// Expresion Classes
+
+const Product1 = class {
+    constructor(itemName,price,discount,productCode){
+        this.itemName = itemName;
+        this.price = price;
+        this.discount = discount;
+        this.productCode = productCode;
+    }
+    get discountValue(){
+        return this.discount;
+    }
+    set setDiscountValue(value){
+        this.discount = value;
+    }
+    discountValue(){
+        return this.discount*this.price/100
+    }
+};
+
+let chair = new Product1('Chair', 499, 15, 'C10');
+
+// Extending Classes
+
+class Product {
+    constructor(itemName){
+        this.itemName = itemName;
+    }
+
+    getItemName(){
+        return this.itemName + " is a Product";
+    }
+}
+
+class Furniture extends Product {
+    constructor(itemName){
+        super(itemName);
+    }
+
+    getItemName(){
+        return this.itemName + " is a Furniture";
+    }
+}
+
+//let pencil = new Product('Pencil');
+//let chair = new Furniture('Chair', 499, 15, 'C10');
+    </script>
+</body>
+</html>
