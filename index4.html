@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays in JS</title>
+</head>
+<body>
+    <script>
+        // const number = [1,2,3,4,5,6,7,8,9];
+// console.log(number[number.length-1])
+
+// Array in Object way
+
+const num = new Array(1,2,3,4,5,6,7,8,9);
+
+// push
+num.push(10)
+
+// unshift
+num.unshift(0)
+
+// pop
+num.pop()
+
+// shift
+num.shift()
+
+const names = ['Shiv', 'Pratap', 'Vikram', 'Rajvardhan', 'Aditya', 'Ashish', 'Abhay', 'Aditya']
+
+// methods
+// indexOf
+names.indexOf('Abhay')
+
+// lastIndexof
+names.lastIndexOf('Aditya')
+
+// includes
+names.includes('Amit')
+
+
+// find
+let channels = [{
+    name: 'Apna College',
+    subscriber: 10000
+}, {
+    name: 'Apni Kaksha',
+    subscriber: 20000
+}, {
+    name: 'Shivpratap',
+    subscriber: 50000    
+}];
+//console.log(channels.find(function(element){
+   // return element.name === 'Apna College'
+//}))
+
+// Arrow Function
+// console.log(channels.fin
+// (element => element.name === 'Apni Kaksha'))
+
+// How to Make and Brake a Arrays
+// concat method
+let names5 = ['Shivpratap', 'Ashish', 'Rajvardhan']
+let names4 = ['Aditya', 'Abhay', 'Krishna']
+
+// console.log(names1.concat(names2))
+
+// slice method
+let names1 = ['Shivpratap', 'Ashish', 'Rajvardhan']
+let names2 = ['Aditya', 'Abhay', 'Krishna']
+let names3 = names1.concat(names2)
+
+// console.log(names3.slice(3))
+
+// spread operator
+let names6 = ['Shivpratap', 'Ashish', 'Rajvardhan']
+let names7 = ['Aditya', 'Abhay', 'Krishna']
+ let names8 = [...names6,...names7]
+
+
+// For loop
+for(let i = 0;i<names.length;i++){
+    // console.log(names[i])
+}
+
+// For of loop
+for(let name of names){
+    // console.log(name)
+}
+
+// For-each loop
+names.forEach(function(name,index){
+    // console.log(name,index)
+})
+
+// Join
+let student = ['P', 'R', 'A', 'T', 'A', 'P']
+student = student.join('-');
+
+// Split
+// console.log(student.split('_'))
+
+// Filter Function
+let cities = [
+    {name: 'Mumbai', population: 3792621},
+    {name: 'Delhi', population: 8175133},
+    {name: 'Banglore', population: 2695598},
+    {name: 'Chennai', population: 2099451},
+    {name: 'Lucknow', population: 1526006},
+];
+
+// console.log(cities.filter(city => city.population > 3000000))
+
+// Map Method
+let cities1 = [
+    {name: 'Mumbai', population: 3792621},
+    {name: 'Delhi', population: 8175133},
+    {name: 'Banglore', population: 2695598},
+    {name: 'Chennai', population: 2099451},
+    {name: 'Lucknow', population: 1526006},
+];
+
+console.log(cities.map(city => city.population * 2))
+    </script>
+</body>
+</html>
