@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scopes in Javascript</title>
+</head>
+<body>
+    <script>
+        // The scope is by default global
+// Global scope
+var name = 'Shiv';
+
+function sayName() {
+  var marks = 86;
+   console.log(name);
+}
+
+sayName()
+// console.log(marks);
+
+
+
+
+var x = 0;
+
+// Global Scope
+function first() {
+    // Local Scope #1
+    var x = 1;
+    console.log(x);
+    function childOfFirst() {
+       var x = 2;
+       console.log(x);
+        // Local Scope #2
+   }
+  childOfFirst()
+}
+
+first()
+
+// Global Scope
+function second() {
+   console.log(x);
+    // Local Scope #3
+}
+// Global Scope
+second()
+
+
+var x = 10;
+// Block Scope
+{
+  var x = 1;
+  console.log(x);
+}
+
+console.log(x);
+
+
+
+
+if (true) {
+    // This 'if' conditional block doesn't create a new scope
+  var foo = 'bar';
+}
+
+console.log(foo);
+
+
+
+// Lexical Scope
+function Dada() {
+    var name = 'Amarpaal Singh';
+    // Likes is not accessible here
+    function Papa() {
+        console.log(name);
+        // Name is accessible here
+        // Likes is not accessible here
+        function Beta() {
+            // Innermost level of the Scope
+            // Name is also accessible here
+            var likes = 'Coding';
+        }
+        Beta()
+    }
+    Papa()
+}
+Dada()
+    </script>
+</body>
+</html>
