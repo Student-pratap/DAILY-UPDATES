@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoisting in Javascript</title>
+</head>
+<body>
+    <script>
+        let foo = 'bar';
+var bar = 'foo'
+function sayHello() {
+    let foo = 'baz';
+    var bar = 'foobar';
+    console.log(foo);
+    console.log(bar);
+}
+sayHello();
+console.log(foo);
+console.log(bar);
+    </script>
+</body>
+</html>
