@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript Strings</title>
+</head>
+<body>
+    <script>
+        console.log("This is JavaScript Strings tutorial");
+
+let name = "Shivpratap";
+console.log(name);
+
+// Quotes Inside quotes
+
+let str1 = "It's alright";
+let str2 = "He is called 'Ashsih'";
+let str3 = 'He is called "Aditya"';
+
+console.log(str1+str2+str3);
+
+// Template Strings
+// Template are notsupported in internet Explorer.
+
+let txt = `He's often called "Abhay"`;
+console.log(txt);
+
+// String Length
+
+let name1 = "Pratap";
+console.log(name1.length);
+
+// Escape Characters
+let text1 = "We are the so-called \"Vikings\" from the north.";
+console.log(text1);
+
+let text2 = 'It\'s alright';
+console.log(text2);
+
+let text3 = "The character \\ is called backslash";
+console.log(text3);
+
+let text4 = "Hello \n everyone";
+console.log(text4);
+
+// Breaking Long Lines
+
+let breaking = "Hello" + 
+"Dolly";
+console.log(breaking);
+
+// Strings as objects in JavaScript
+// objects never accept == operator
+let obj = "Amit";
+let obj1 = new String("Arpit");
+console.log(typeof obj + " " + typeof obj1);
+
+// Basic Strings methods
+
+// String Length
+
+let length = "Acropolis";
+console.log(length.length);
+
+let character = "Acropolis";
+console.log(character.charAt(0));
+
+let code = "Management";
+console.log(code.charCodeAt(0));
+
+let a = "Shakti";
+console.log(a.at(1));
+    </script>
+</body>
+</html>
