@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings part(III)</title>
+</head>
+<body>
+    <script>
+        console.log("This is javaScript Strings tutorial Part (III)");
+
+// javaScript String indexof Method
+let txt = "JavaScript Indexof";
+let txt1 = txt.indexOf("of");
+console.log(txt1);
+
+// javaScript String lastIndexof Method
+let txt2 = "JavaofScript Indexof";
+let txt3 = txt.indexOf("Index");
+console.log(txt3);
+
+// javaScript Strings search method
+
+let text = "Please visit the my page";
+let text1 = text.search("the");
+console.log(text1);
+
+let match = "Hello everyone i am going i am coming i am eating and i am sleeping ";
+let match1 = match.match("ing");
+console.log(match1);
+
+// JavaScript Strings includes methods
+
+let inclu = "Hello World, welcome to chambal";
+let inclu1 = inclu.includes("World");
+console.log(inclu1);
+
+// JavaScript Strings startsWith methods
+
+let inclu2 = "Hello World, welcome to chambal";
+let inclu3 = inclu2.startsWith("Hello", 0);
+console.log(inclu3);
+
+// JavaScript Strings endsWith methods
+
+let end = "Hello World, welcome to chambal";
+let end1 = end.endsWith("chambal");
+console.log(end1);
+
+// Template Strings 
+// Variables Substitution
+let firstName = "Ashish Singh";
+let lastName = "Kushwah";
+let result = `Hey ${firstName} ${lastName}`;
+console.log(result);
+
+let name = "Aditya";
+let name2 = "Chauhan";
+let answer = `Welcome ${name} Singh ${name2}`;
+console.log(answer); 
+    </script>
+</body>
+</html>
