@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings in javaScript</title>
+</head>
+<body>
+    <script>
+        let str = ("Student name");
+console.log(str[2]);
+
+//Template Literals 
+let specialString = `This is a template literals`;
+console.log(specialString);
+
+let obj = {
+    items: "pen",
+    price: 10,
+};
+
+console.log(obj);
+
+let name = "Shiv \n pratap";
+console.log(name);
+
+let name1 = "Shiv\tpratap";
+console.log(name1.length);
+
+//Strings Methods in js
+let Case = "ADITYA";
+console.log(Case.toLowerCase());
+
+let Case2 = "ashish";
+console.log(Case2.toUpperCase());
+
+let Case3 = "   Shiv  pratap  js  ";
+console.log(Case3.trim());
+
+let newCase = "NehaSandeepTomar";
+console.log(newCase.slice(4,11));
+
+let newCase2 = "0123456789";
+console.log(newCase2.slice(0,2));
+
+let con = "Shiv";
+let con1 = "Shakti";
+console.log(con.concat(con1));
+
+let change = "Rajvardhan";
+console.log(change.replace("R", "S"));
+
+// Let's Practice
+
+let fullName = prompt("enter Your Fullname without spaces");
+
+let userName = "@" + fullName + fullName.length;
+console.log(userName);
+    </script>
+</body>
+</html>
