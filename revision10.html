@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array's in javaScript</title>
+</head>
+<body>
+    <script>
+        console.log("Hello this is Arrays lacture");
+// how to stored marks of five students
+
+// first way with using variables
+let marks1 = 95;
+let marks2 = 85;
+let marks3 = 75;
+let marks4 = 65;
+let marks5 = 55;
+
+console.log(marks1,marks2,marks3,marks4,marks5);
+
+// Second way using objects 
+
+let mark = {
+    stu1: 97,
+    stu2: 87,
+    stu3: 77,
+    stu4: 67,
+    stu5: 57,
+}
+
+console.log(mark);
+
+let names = {
+    name1: "Ashish",
+    name2: "Aditya",
+    name3: "Abhay",
+    name4: "Rajvardhan",
+    name4: "ShivPratap",
+}
+
+console.log(names);
+
+// third way using Arrays
+
+let num = [99,89,79,69,59];
+console.log(num);
+
+let Employees = ["Ashish", "Aditya", "Sandeep", "Rupendra", "Shivpratap",]
+ Employees[2] = "Pradeep" 
+console.log(Employees);
+
+// for loop
+let brothers = ["Ashish", "Aditya", "Abhay", "Rajvardhan","Shakti"];
+
+for (let idx = 0; idx < brothers.length; idx++) {
+    console.log(brothers[idx]);
+}
+
+// for of
+
+for(let el of brothers) {
+    console.log(el);
+}
+
+// Practice
+
+let cities = ["Gwalior", "Indore", "Delhi","Jaipur", "Udaypur"];
+console.log(cities);
+
+// Change a particular data
+
+cities[2] = "hindon";
+console.log(cities);
+
+// loops
+
+for (let i = 0; i< cities.length; i++) {
+    console.log(cities[i]);
+}
+
+for (let el of cities) {
+    console.log(el.toUpperCase());
+}
+
+// How to sum of average marks
+
+let marks = [97,67,55,87,82];
+console.log(marks);
+
+let sum = 0;
+
+for (let val of marks) {
+    sum += val;
+}
+
+let avg = sum / marks.length;
+console.log(`avg marks of the class = ${avg}`);
+    </script>
+</body>
+</html>
