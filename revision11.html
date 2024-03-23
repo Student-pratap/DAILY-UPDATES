@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array's in javaScript</title>
+</head>
+<body>
+    <script>
+        console.log("Hello everyone This is Strings tutorial");
+
+let price = [250, 645, 300, 900, 50,];
+
+// let i = 0;
+// for (let rate of price) {
+//     console.log(`value of index ${i} = ${rate}`);
+//     i++;
+//    let offer = rate / 10;
+//     price[i] = price[i] - offer;
+//     console.log(`value after offer ${price[i]}`);
+// }
+
+// Solving same problem by for loop 
+
+for (let i=0; i<price.length; i++) {
+    let offer = price[i] / 10;
+    price[i] -= offer;
+    console.log(`value after offer ${price[i]}`);
+}
+
+for (let i=0; i<=price.length; i++) {
+    console.log(i);
+}
+
+
+// self Example
+
+// let father = ["Neha", "Ashish", "Sneha", "Shivpratap"];
+// console.log(father);
+
+// for (let i=0; i<father.length; i++) {
+//     console.log(i);
+// }
+
+// let i=0;
+// for (let childs of father) {
+//    console.log(`${i} = ${childs}`);
+//     i++;
+// }
+
+// Array Methods
+
+// Push method for add in ending
+
+let list = ["Sugar", "Ghee", "Salt", "Oil"];
+
+list.push("Soap", "Toothpaste");
+
+console.log(list);
+
+// Pop methd
+
+let medicines = ["Meftal spas", "CTZ", "CZ3"];
+console.log(medicines);
+let deletedValue = medicines.pop();
+console.log(medicines);
+console.log(deletedValue);
+
+// toString method
+
+let subjects = ["Cloud Computing", "Data Warehouse", "Operating System", "MYSQL"];
+console.log(subjects);
+console.log(subjects.toString());
+
+// Concat Method
+
+let mother = ["Mama", "Mami", "Nana", "Nani"];
+let father = ["Chacha", "Tau", "Dada", "Dadi"];
+let relation = mother.concat(father);
+console.log(relation);
+
+// Shift and Unshift Methods
+
+let fruits = ["Apple", "Graphes", "Licthi", "Oranges"];
+console.log(fruits);
+fruits.unshift("Mango");
+console.log(fruits);
+
+let veggies = ["Tomato", "Onion", "Potato"];
+console.log(veggies);
+veggies.shift()
+console.log(veggies);
+
+// Slice method
+
+let cars = ["Scorpio", "Endevour", "Bolero", "Defender", "Range Rover"];
+console.log(cars.slice(1, 4));
+
+// Splice method
+
+let bikes = ["Apache rtr", "Royal Enfield", "Ninja 400", "Dominar 300", "RX100"];
+bikes.splice(2, 2, "Splender", "Honda Shine");
+console.log(bikes);
+
+// Practice
+
+let Companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+Companies.shift();
+Companies.splice(1, 1, "Ola");
+Companies.push("Amazon");
+console.log(Companies);
+
+    </script>
+</body>
+</html>
