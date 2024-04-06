@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions in javaScript</title>
+</head>
+<body>
+    <script>
+        function myFunction(x, y) {
+    return x+y;
+}
+
+let val = myFunction(4, 5);
+console.log(val);
+
+function myExample (a, b) {
+    s = a*b;
+    return s;
+}
+
+let ans = myExample(4, 5);
+console.log(ans);
+
+// sum function
+
+function sum(c,d) {
+    return c + d;
+}
+
+let total = sum(4, 4);
+const arrowSum = (c, d) => {
+}
+console.log(arrowSum);
+
+// Multiplication function
+
+function multi(a, b) {
+    return a * b;
+}
+
+let arrowMulti = (a, b) => {
+    return a * b;
+};
+console.log(arrowMulti);
+
+// Let's Practice
+
+function countVowels(str) {
+    let count = 0;
+    for(const char of str) {
+        if ( char === "a" || char === "e" || char === "i" || char === "o" || char === "u") {
+            count++;
+        }
+    }
+    console.log(count);
+}
+
+// forEach loop in Array in javaScript
+
+let arr = ["pune", "delhi", "mumbai"];
+
+arr.forEach((val, index, arr) => {
+    console.log(val, index, arr);
+})
+
+// Let's practice
+
+let num = [2, 3, 4, 5, 6];
+
+num.forEach((num) => {
+    console.log(num * num);
+})
+
+let nums = [67,76,66,77];
+
+nums.forEach((num) => {
+    console.log(num * num);
+});
+
+// map method
+
+let numbers = [55, 66, 77];
+
+ let newarr = numbers.map((val) => {
+    return val * 2;
+});
+console.log(newarr);
+
+let even = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+let newnum = even.filter((val) => {
+    return val > 3; 
+})
+console.log(newnum);
+
+// Reduce Method
+
+let arr2 = [1, 2, 3, 4];
+
+const output = arr2.reduce((res, curr) => {
+    return res + curr;
+});
+
+console.log(output);
+
+let firstNum = [1,2,3,4,5,6];
+
+const secondNum = firstNum.reduce((res, curr) => {
+    return res > curr ? res : curr;
+});
+
+console.log(secondNum);
+
+// Let's Practice
+
+let marks = [97, 64, 32, 49, 99, 96, 86];
+
+let newMarks = marks.filter((val) => {
+    return val > 90; 
+});
+
+console.log(newMarks);
+
+let n = prompt("enter a number : ");
+
+let arr3 = [];
+
+for(let i = 1; i<=n; i++) {
+    arr3[i - 1] = i;
+}
+console.log(arr3);
+
+let numArr = arr3.reduce((res, curr) =>{
+    return res + curr;
+});
+
+console.log(numArr);
+
+const numArr2 = arr3.reduce((res, curr) => {
+    return res * curr;
+});
+
+console.log(numArr2);
+
+
+    </script>
+</body>
+</html>
