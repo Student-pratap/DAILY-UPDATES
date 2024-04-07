@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice set</title>
+</head>
+<body>
+    <script>
+        // How to find Duplicate element in a given Array?
+
+// Example-1
+
+let arr = [1,2,3,4,1,5,2,3,4,5,5,6,7,87,88,89];
+
+const arr2 = arr.filter((ele, idx, arr) => arr.indexOf(ele)!==idx);
+
+console.log(arr2);
+
+// Example-2
+
+let arr3 = [11,12,13,14,15,11,12,17,12];
+
+const duplicate = arr3.filter((check, num, correct) => arr3.indexOf(check)!==num);
+
+console.log(duplicate);
+
+// Example-3
+
+let names = ["Ashish", "Aditya", "Amit", "Ashish", "Aditya"];
+
+const duplicate2 = names.filter((arr, check, right) => names.indexOf(arr)!==check);
+
+console.log(duplicate2);
+
+// Example-4
+
+let cities = ["Bhind", "Gwalior", "Morena", "Jaipur", "Hindon", "Bhind", "Morena", "Jaipur"];
+
+const duplicate3 = cities.filter((ele, idx, arr) => cities.indexOf(ele)!==idx);
+
+console.log(duplicate3);
+
+// Example-5
+
+let Bikes = ["Apache", "Bullet", "RX100", "Splender", "Fzs", "Apache", "Bullet", "Fzs"];
+
+const duplicateBikes = Bikes.filter((ele, idx, arr) => Bikes.indexOf(ele)!==idx);
+
+console.log(duplicateBikes);
+
+// Example-6
+
+let cars = ["Scorpio", "Bolero", "Endevour", "Defender", "i10", "Creta", "Scorpio", "Bolero", "i10"];
+
+const duplicateCars = cars.filter((ele, idx, arr) => cars.indexOf(ele)!==idx);
+
+console.log(duplicateCars);
+
+// Example-7
+
+let phones = ["Redmi", "Realme", "Poco", "Oneplus", "iphone", "Redmi", "Oneplus"];
+
+const duplicatePhones = phones.filter((ele, idx, arr) => phones.indexOf(ele)!==idx);
+
+console.log(duplicatePhones);
+
+let fruits = ["Apple", "Banana", "Papaya", "Guava", "CoconutWater", "Apple", "Papaya"];
+
+const duplicateFruits = fruits.filter((ele, idx, arr) => fruits.indexOf(ele)!==idx);
+
+console.log(duplicateFruits);
+    </script>
+</body>
+</html>
