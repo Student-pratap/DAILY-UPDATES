@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS with ApnaCollege</title>
+    <style>
+        h1 {
+    color: yellow;
+    text-decoration: line-through;
+}
+
+body {
+    background-color: gray;
+}
+    </style>
+</head>
+<body>
+    <div>abcd</div>
+    <h1 class="myClass">DOM demo by Apna college</h1>
+    <h1 class="myClass">JavaScript</h1>
+    <h4 class="myClass">Topic1 : Starter Code</h4>
+    <p>Let's learn about DOM concepts in detail.</p>
+    <p>Second Paragraph</p>
+    <button id="myId">Click me!</button>
+   
+    <script>
+        let button = document.getElementById("myId");
+console.log(button);
+
+let headings = document.getElementsByClassName("myClass");
+console.log(headings);
+console.log(headings);
+
+let parahs = document.getElementsByTagName("p");
+console.dir("parahs");
+
+let firstEl = document.querySelector("p");
+console.log(firstEl);
+
+let allEl = document.querySelectorAll("p");
+console.log(allEl);
+
+let newEl = document.querySelector(".myClass");
+console.log(newEl);
+    </script>
+</body>
+</html>
