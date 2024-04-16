@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Lecture</title>
+    <style>
+        .box {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    margin: 5px;
+    text-align: center;
+    background-color: aquamarine;
+}
+    </style>
+</head>
+
+<body>
+    <h2>Hello JavaScript!</h2>
+    <div class="box">First div</div>
+    <div class="box">Second div</div>
+    <div class="box">Third div</div>
+    <div id="box">This is a div</div>
+    <p class="para">This is a simple line</p>
+    <script>
+        let h2 = document.querySelector("h2");
+
+h2.innerText = h2.innerText + "from Apna College Students";
+
+console.log(h2.innerText);
+
+// let divs = document.querySelector(".box");
+
+let divs = document.querySelectorAll(".box");
+
+let idx = 1;
+for (div of divs) {
+    div.innerText = `new unique value ${idx}`;
+    idx++;
+}
+
+let div = document.querySelector("div");
+console.log(div);
+
+
+    </script>
+</body>
+
+</html>
