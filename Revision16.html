@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events in JavaScript.</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #myDiv {
+            height: 200px;
+            width: 300px;
+            background-color: orangered;
+            margin: 50px 0 0 30px;
+            color: white;
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="myDiv" onclick="myFun()">This is my First Div.</div>
+    <!-- <div id="myDiv" oncontextmenu="rightClick()">This is my First Div.</div> -->
+    <div id="myDiv" ondblclick="doubleClick()">This is my First Div.</div>
+    <div id="myDiv" onmousedown="mouseDown()">This is my First Div.</div>
+    <div id="myDiv" onmouseup="mouseUp()">This is my First Div.</div>
+    <div id="myDiv" onmouseover="mouseOver()">This is my First Div.</div>
+    <div id="myDiv" onmouseout="mouseOut()">This is my First Div.</div>
+
+    <script>
+        // Left Click Mouse Event in JavaScript
+
+        function myFun() {
+            alert("Left Click Event Work Sucessfully")
+        }
+
+        // Right Click Mouse Event in JavaScript
+        // This Event is not working in myfiles or system I Don't no why
+
+        // function rightClick () {
+        //     alert("Right Click Event Work Sucessfully")
+        // }
+
+        // Double click Mouse Event in JavaScript
+
+        function doubleClick() {
+            alert("Double Click Event Work Sucessfully")
+        }
+
+        // Onmousedown Click Mouse Event in JavaScript
+
+        function mouseDown() {
+            alert("Onmousedown Click Event Work Sucessfully")
+        }
+
+        // Onmouseup Click Mouse Event in JavaScript
+
+        function mouseUp() {
+            alert("Onmouseup Click Event Work Sucessfully")
+        }
+
+        // Onmouseover Click Mouse Event in JavaScript
+
+        function mouseOver() {
+            alert("Onmouseover Click Event Work Sucessfully")
+        }
+
+        // Onmouseout Click Mouse Event in JavaScript
+
+        function mouseOut() {
+            alert("Onmouseout Click Event Work Sucessfully")
+        }
+    </script>
+</body>
+
+</html>
